@@ -11,7 +11,9 @@ const App = () => {
         <h1 className="text-xl font-bold text-center">🚀 Rick and Morty - Fan Service</h1>
       </div>
       <Outlet />
-      <p>Wersja aplikacji: {context.appVersion}</p>
+      <p>
+        Wersja aplikacji: {context.appVersion}; Środowisko: {context.appEnv}
+      </p>
     </div>
   );
 };
